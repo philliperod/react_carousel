@@ -4,24 +4,13 @@ import { FaQuoteRight } from 'react-icons/fa';
 import data from './data';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [people, setPeople] = useState(data);
+  const [index, setIndex] = useState(0);
+
+  return <h2>slider project setup</h2>;
 }
 
 export default App;
+
+// 1) create an useState hook that will access the data array
+// 2) create an useState hook that will change the index value derived from the data array; default value will be zero for the initial index value
